@@ -1,0 +1,45 @@
+/*BACKGROUND*/
+
+body {
+    width:100%;
+    height:100vh;
+    background: linear-gradient(-90deg, #f7797d,#FF8C00, #40E0D0);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    overflow:hidden;
+}
+
+
+/*CONTAINER/GRID/BUTTONS*/
+
+.flex{
+  width: 80%;
+  padding: 10px;
+  margin:0 auto;
+  display:flex;
+  justify-content: center;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px #ddd;
+  border:none;
+  padding:50;
+  text-align: center;
+  margin:15px auto;
+  color:white;
+  border-radius:10px;
+}
+
+/*ANIMATIONS*/
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
